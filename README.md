@@ -13,8 +13,10 @@
  
 # TODO:
  
- # Determinar o que fazer com arquivos de tipos não listados.
+  # Determinar o que fazer com arquivos de tipos não listados.
 
-  # Verificar se algum arquivo não deve ser copiado/movido.
+  # Verificar se algum arquivo não deve ser copiado/movido. - Ignorar
 
-  # Desenvolver interface gráfica; (TKinter ?)
+  # Desenvolver interface gráfica; (TKinter ?) - Done. interface criada com a lib customtkinter.
+
+  # Integrar o código a interface gráfica.
