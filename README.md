@@ -19,4 +19,6 @@
 
   ▶️ ~~Desenvolver interface gráfica; (TKinter ?)~~ - Done. interface criada com a lib customtkinter.
 
-  ▶️ Integrar o código a interface gráfica.
+  ▶️ Integrar o código a interface gráfica. - Done. arquivos interface.py e organizador.py integrados
+  
+  ▶️ Bateria de testes para verificar possíveis erros de lógica e de uso.
