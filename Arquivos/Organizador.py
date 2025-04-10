@@ -4,15 +4,17 @@
 
 # Este código foi feito a partir do código original, postado no Linkedin, por Felipe Torres. O código original pode ser visto neste link: https://shre.ink/MLHq
 
-import tkinter
-import tkinter.messagebox
 import customtkinter
 import os
 import shutil
+import time
 
 # Define tema da interface
 customtkinter.set_appearance_mode("Dark")
 customtkinter.set_default_color_theme("blue")
+
+# Help do Organizador
+ajuda = 'Ajuda do Organizador\n\nEste programa verifica os tipos de arquivos presentes em uma pasta e classifica os mesmos pelo tipo de arquivo, em pastas separadas.\n\nCaminho de Origem: O caminho completo da pasta a ser organizada.\n   P.Ex: /home/<usuário>/Downloads\n\nCaminho de Destino: O caminho completo onde as pastas organizadas vão ser criadas.\n   P.Ex: /home/<usuário>/Documents" (deixar em branco se o local for o mesmo do Caminho de Origem)'
 
 
 # Definição dos Radio Button
@@ -50,8 +52,8 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("my app")
-        self.geometry("500x320")
+        self.title("Organizador")
+        self.geometry("620x360")
         self.grid_columnconfigure((0, 2), weight=1)
         self.grid_rowconfigure(0, weight=1)
         self.organizador = self
@@ -86,9 +88,18 @@ class App(customtkinter.CTk):
         )
         self.button_2.grid(row=4, column=0, padx=10, pady=10, sticky="ew", columnspan=2)
 
+        self.button_3 = customtkinter.CTkButton(
+            self, text="Ajuda", command=self.buttom_ajuda
+        )
+        self.button_3.grid(row=4, column=2, padx=10, pady=10, sticky="ew", columnspan=2)
+
         self.textbox = customtkinter.CTkTextbox(self, width=100)
         self.textbox.grid(
             row=0, column=2, padx=10, pady=(10, 0), sticky="nsew", columnspan=1
+        )
+
+        self.textbox_2 = customtkinter.CTkTextbox(self, width=100)
+        self.textbox_2.grid(row=2, column=2, padx=10, pady=(10, 0), sticky="nsew", columnspan=1, rowspan=2,
         )
 
     # Define as ações quando o botão Executar é clicado
@@ -126,13 +137,16 @@ class App(customtkinter.CTk):
                     if arquivo.lower().endswith(extensoes):
                         pasta1 = saida + "/" + pasta
                         shutil.move(caminho_origem, os.path.join(pasta1, arquivo))
-
+        time.sleep(5)
         self.textbox.insert("0.0", "Ação solicitada executada com sucesso")
 
     # Define a ação correspondente ao botão Sair
     def buttom_end(self):
-        self.organizador.destroy()
         self.organizador.quit()
+        self.organizador.destroy()
+
+    def buttom_ajuda(self):
+        self.textbox_2.insert("0.0", ajuda)
 
 
 app = App()
