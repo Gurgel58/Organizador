@@ -20,6 +20,8 @@
   ▶️ ~~Desenvolver interface gráfica; (TKinter ?)~~ - Done. interface criada com a lib customtkinter.
 
   ▶️ ~~Integrar o código a interface gráfica.~~ - Done. arquivos interface.py e organizador.py integrados.
+
+  ▶️ Verificar se as libs necessárias estão instaladas. Efetuar a instalação, caso não estejam.
   
   ▶️ Bateria de testes para verificar possíveis erros de lógica e de uso.
 
