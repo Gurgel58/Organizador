@@ -13,12 +13,17 @@
  
 # TODO:
  
-  ▶️ Determinar o que fazer com arquivos de tipos não listados.
+  ▶️ Determinar o que fazer com arquivos de tipos não listados. Verificar a real necessidade.
 
-  ▶️ ~~Verificar se algum arquivo não deve ser copiado/movido.~~ - Ignorar
+  ▶️ ~~Verificar se algum arquivo não deve ser copiado/movido.~~ - Ignorar.
 
   ▶️ ~~Desenvolver interface gráfica; (TKinter ?)~~ - Done. interface criada com a lib customtkinter.
 
-  ▶️ Integrar o código a interface gráfica. - Done. arquivos interface.py e organizador.py integrados
+  ▶️ ~~Integrar o código a interface gráfica.~~ - Done. arquivos interface.py e organizador.py integrados.
   
   ▶️ Bateria de testes para verificar possíveis erros de lógica e de uso.
+
+  ▶️ Efetuar testes no Windows, o código deve ser capaz de executar sem falhas tanto no Linux quanto no Windows.
+
+
+  Last: 09/04/2025
