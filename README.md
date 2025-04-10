@@ -13,7 +13,7 @@
  
 # TODO:
  
-  ▶️ Determinar o que fazer com arquivos de tipos não listados. Verificar a real necessidade.
+  ▶️ ~~Determinar o que fazer com arquivos de tipos não listados~~. Ignorar.
 
   ▶️ ~~Verificar se algum arquivo não deve ser copiado/movido.~~ - Ignorar.
 
