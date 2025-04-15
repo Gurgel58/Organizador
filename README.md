@@ -21,11 +21,11 @@
 
   ▶️ ~~Integrar o código a interface gráfica.~~ - Done. arquivos interface.py e organizador.py integrados.
 
-  ▶️ Verificar se as libs necessárias estão instaladas. Efetuar a instalação, caso não estejam.
+  ▶️ ~~Verificar se as libs necessárias estão instaladas. Efetuar a instalação, caso não estejam.~~ - Done.
   
   ▶️ Bateria de testes para verificar possíveis erros de lógica e de uso.
 
   ▶️ Efetuar testes no Windows, o código deve ser capaz de executar sem falhas tanto no Linux quanto no Windows.
 
 
-  Last: 09/04/2025
+  Last: 14/04/2025
