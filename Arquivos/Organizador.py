@@ -4,10 +4,31 @@
 
 # Este código foi feito a partir do código original, postado no Linkedin, por Felipe Torres. O código original pode ser visto neste link: https://shre.ink/MLHq
 
+import subprocess
+import sys
+import time
+
+# List of required libraries
+required_libraries = ["customtkinter"]
+
+
+# Verifica se a lib customtkinter está instalada
+def install_libraries():
+    for lib in required_libraries:
+        try:
+            __import__(lib)
+        except ImportError:
+            subprocess.check_call([sys.executable, "-m", "pip", "install", lib])
+
+
+# Install the libraries
+install_libraries()
+
+time.sleep(5)
+
 import customtkinter
 import os
 import shutil
-import time
 
 # Define tema da interface
 customtkinter.set_appearance_mode("Dark")
@@ -52,7 +73,7 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("Organizador")
+        self.title("Organizador - by Alexandre Gurgel")
         self.geometry("620x360")
         self.grid_columnconfigure((0, 2), weight=1)
         self.grid_rowconfigure(0, weight=1)
@@ -99,7 +120,14 @@ class App(customtkinter.CTk):
         )
 
         self.textbox_2 = customtkinter.CTkTextbox(self, width=100)
-        self.textbox_2.grid(row=2, column=2, padx=10, pady=(10, 0), sticky="nsew", columnspan=1, rowspan=2,
+        self.textbox_2.grid(
+            row=2,
+            column=2,
+            padx=10,
+            pady=(10, 0),
+            sticky="nsew",
+            columnspan=1,
+            rowspan=2,
         )
 
     # Define as ações quando o botão Executar é clicado
