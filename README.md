@@ -25,7 +25,7 @@
   
   ▶️ Bateria de testes para verificar possíveis erros de lógica e de uso.
 
-  ▶️ Efetuar testes no Windows, o código deve ser capaz de executar sem falhas tanto no Linux quanto no Windows.
+  ▶️ ~~Efetuar testes no Windows, o código deve ser capaz de executar sem falhas tanto no Linux quanto no Windows.~~
 
 
-  Last: 14/04/2025
+  Last: 28/04/2025
